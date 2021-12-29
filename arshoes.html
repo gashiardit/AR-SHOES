@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR SHOES</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(back.png); 
+    height: 490vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+ }
+
+ body {  
+    margin: 0;  
+    background: #e6e6e6; 
+    font-family: 'Popins', sans-serif; 
+}  
+
+
+
+.logo img{
+    float: left;
+    width: 250px;
+    height: auto;
+}
+
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    float: right;
+    list-style-type: none;
+    margin-left: 600px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5PX 20PX;
+    border: 1px solid #fff;
+}
+
+nav ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+nav ul li.active a{
+    background-color: #fff;
+    color: #000;
+}
+
+
+
+.container{
+    max-width: 1500px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+
+}
+
+
+.col-2 h1 { 
+    color: #ff91da; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 80px; 
+    font-weight: 900; 
+    line-height: 80px;
+    margin: 30px 0 80px; 
+    margin-right: 200px;
+    text-align: center;
+    text-transform: uppercase; 
+
+}
+
+
+.title-shop
+{
+    color: #ff91da; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 80px; 
+    font-weight: 900; 
+    line-height: 80px;
+    margin-bottom: 0px;
+    text-align: center;
+    text-transform: uppercase; 
+
+}
+.col-2 img{
+    position: relative; right: 120px;
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+
+.categories{
+    margin: 0px 0;
+    position: relative;
+}
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 200px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+
+.col-3 img{
+    width: 100%;
+    padding: 10px 0;
+}
+
+h3{
+    color: #070550; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 18px; 
+    font-weight: 900; 
+    line-height: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    text-transform: uppercase; 
+
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: 20%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+.col-4{
+    flex-basis: 23%;
+    padding: 10px;
+    
+    margin-bottom: 50px;
+}
+
+
+.col-4 img{
+    width: 100%;
+    
+}
+
+.title{
+    color: #310322; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 30px; 
+    font-weight: 900; 
+    line-height: 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    text-transform: uppercase; 
+    text-decoration-line: underline;
+}
+
+h4{
+    color: rgb(224, 255, 87);
+    font-weight: normal;
+    text-align: center;
+    font-size: 20px;
+}
+
+p{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(206, 224, 45);
+}
+
+
+.mySlides {display: none;}
+    img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  padding-top: 0px;
+  left: 130px;
+ width: 600px;
+}
+
+ 
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+}
+    </style>
+
+</head>
+<body>
+
+    <header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="arshoes-logo.png" alt="">
+            </div>
+
+        <div>
+
+            <nav>
+                <ul>
+                <li><a href="arshoes.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+            
+        </div>
+        
+    </div>
+
+
+
+     <div class="row">
+            <div class="col-2">
+                <h1>If the <br> shoe <br> fits,<br/>BUY <br> IT!</h1>
+            </div>
+            
+            <div class="col-2">
+                <div class="slideshow-container">
+
+            <div class="w3-content w3-section">
+                <img class="mySlides w3-animate-fading" src="ourbrands.png" style="width:140%">
+            </div>
+
+            <div class="w3-content w3-section">
+              <img class="mySlides w3-animate-fading" src="adidasbrand.png" style="width:140%">
+            </div>
+            <div class="w3-content w3-section">
+                <img class="mySlides w3-animate-fading" src="nikebrand.png" style="width:140%">
+              </div>
+            
+            <div class="w3-content w3-section">
+              <img class="mySlides w3-animate-fading" src="underarmourbrand.png" style="width:140%">
+            </div>
+            <div class="w3-content w3-section">
+                <img class="mySlides w3-animate-fading" src="pumabrand.png" style="width:140%">
+              </div>
+            
+            <div class="w3-content w3-section">
+              <img class="mySlides w3-animate-fading" src="adidasbrand-2.png" style="width:140%">
+            </div>
+            <div class="w3-content w3-section">
+                <img class="mySlides w3-animate-fading" src="nikebrand-2.png" style="width:140%">
+              </div>
+
+              <div class="w3-content w3-section">
+                <img class="mySlides w3-animate-fading" src="underarmourbrand-2.png" style="width:140%">
+              </div>
+              <div class="w3-content w3-section">
+                <img class="mySlides w3-animate-fading" src="pumabrand-2.png" style="width:140%">
+              </div>
+            
+        </div>
+            </div>
+
+        </div>
+    
+            
+            
+        </div>
+
+
+
+    </div>
+
+
+
+    
+
+    <div class="categories">
+        <div class="small-container">
+            <h2 class="title-shop">SHOP NOW!</h2>
+            <br>
+            <br>
+                <div class="row">
+            <div class="col-3">
+                <img src="menshoes.jpg" alt="">
+                <h3>SHOES FOR MEN</h3>
+            </div>
+            <div class="col-3">
+                <img src="kidshoes.jpg" alt="">
+                <h3>SHOES FOR KIDS</h3>
+            </div>
+            <div class="col-3">
+                <img src="womenshoes.jpg" alt="">
+                <h3>SHOES FOR WOMEN</h3>
+            </div>
+        </div>
+            
+            
+        </div>
+    </div>
+
+
+    <div class="small-container">
+        <h2 class="title">ADIDAS Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="adidas1.png" alt="">
+                <h4>Superstar</h4>
+                <p>$95.00</p>
+            </div>
+            
+            <div class="col-4">
+                <img src="adidas2.png" alt="">
+                <h4>Fluid Flow</h4>
+                <p>$70.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="adidas3.png" alt="">
+                <h4>Supernova</h4>
+                <p>$8.00</p>
+            </div>
+
+            <div class="col-4">
+                <img src="adidas4.png" alt="">
+                <h4>Forum Bold</h4>
+                <p>$110.00</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div>
+            <h2 class="title">NIKE Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="nike1.png" alt="">
+                    <h4>Airforce 1'07</h4>
+                    <p>$90.00</p>
+                </div>
+    
+                <div class="col-4">
+                    <img src="nike2.png" alt="">
+                    <h4>Green Noise</h4>
+                    <p>$130.00</p>
+                </div>
+    
+                <div class="col-4">
+                    <img src="nike3.png" alt="">
+                    <h4>Freak2Sneakers</h4>
+                    <p>$160.00</p>
+                </div>
+    
+                <div class="col-4">
+                    <img src="nike4.png" alt="">
+                    <h4>Dunk High</h4>
+                    <p>$100.00</p>
+                </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <h2 class="title">UNDERAMOUR Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="underarmour1.png" alt="">
+                    <h4>Runplay</h4>
+                    <p>$120.00</p>
+                </div>
+    
+                <div class="col-4">
+                    <img src="underarmour2.png" alt="">
+                    <h4>Impulse Running</h4>
+                    <p>$85.00</p>
+                </div>
+    
+                <div class="col-4">
+                    <img src="underarmour3.png" alt="">
+                    <h4>Summit Fat Tire</h4>
+                    <p>$125.00</p>
+                </div>
+    
+                <div class="col-4">
+                    <img src="underarmour4.png" alt="">
+                    <h4>Aurora Training</h4>
+                    <p>$75.00</p>
+                </div>
+
+                <br>
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <h2 class="title">PUMA Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="puma1.png" alt="">
+                    <h4>Suede Classic</h4>
+                    <p>$70.00</p>
+                </div>
+    
+                <div class="col-4">
+                    <img src="puma2.png" alt="">
+                    <h4>Fuse Training</h4>
+                    <p>$90.00</p>
+                </div>
+    
+                <div class="col-4">
+                    <img src="puma3.png" alt="">
+                    <h4>Velocity Nitro</h4>
+                    <p>$120.00</p>
+                </div>
+    
+                <div class="col-4">
+                    <img src="puma4.png" alt="">
+                    <h4>Cell Vive</h4>
+                    <p>$49.99</p>
+                </div>
+        </div>
+        </div>
+    </div>
+    </header>
+
+
+    <script>
+               var myIndex = 0;
+      showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    myIndex++;
+  if (myIndex > slides.length) {myIndex = 1}    
+    slides[myIndex-1].style.display = "block";  
+    setTimeout(showSlides, 9000); 
+  } 
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+

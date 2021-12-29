@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AR SHOES</title>
+    <link rel="stylesheet" href="arf.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+
+
+    <style>
+
+
+    .container-contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 0px;
+    }
+
+    .form
+    {
+    width:450px;
+    height:370px;
+    background-image: url(back.png); 
+    border-radius:10px;
+    
+    padding:10px 80px;
+    max-width:calc(100vw - 40px);
+    box-sizing:border-box;font-family:'Montserrat',sans-serif;
+    position:absolute; 
+    margin-bottom: 500px; 
+    margin-left: 0px;
+    }
+
+    ::placeholder{
+        color: #fff;
+    }
+
+
+    input
+    {
+    width:100%;
+    padding:10px;
+    box-sizing:border-box;
+    background:none;
+    outline:none;
+    resize:none;
+    border:0;
+    font-family:'Montserrat',sans-serif;
+    transition:all .3s;
+    border-bottom:2px solid #ffffff
+    }
+
+    input:focus{
+        border-bottom:2px solid #ffffff
+    }
+
+    p:before
+    {
+        content:attr(type);
+        display:block;
+        margin:28px 0 0;
+        font-size:14px;
+        color:#ffffff
+}
+
+    button
+    {
+        float:right;
+        padding:8px 12px;
+        margin:8px 0 0;
+        font-family:'Montserrat',sans-serif;
+        border:2px solid #ffffff;
+        background:0;
+        color:#ffffff;
+        cursor:pointer;
+        transition:all .3s
+    }
+
+        button:hover
+        {
+            background:#ffffff;
+            color:#fff
+        }
+
+
+        </style>
+
+</head>
+<body>
+
+    <header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="arshoes-logo.png" alt="">
+            </div>
+
+        <div>
+
+            <nav>
+                <ul>
+                <li><a href="arshoes.html">Home</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="top-image">
+            <img src="contactus-logo.png" alt=""> 
+        </div>
+    </header>
+
+
+
+    <div class="container-contact">
+        
+        <form class="form">
+
+        <p type="Name:"><input placeholder="Write your name here"></input></p>
+        <p type="Email:"><input placeholder="Let us know how to contact you back"></input></p>
+        <p type="Message:"><input placeholder="What would you like to tell us"></input></p>
+        <button>Send Message</button>
+      </form>
+    </div>
+    
+</body>
+</html>
+
+
+
+
+
